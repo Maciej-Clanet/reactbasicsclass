@@ -1,0 +1,22 @@
+.search {
+    display: flex;
+    gap: 8px;
+
+    >input {
+        border: 1px solid white;
+        color: white;
+        padding: 4px 16px;
+        border-radius: 32px;
+        background: none;
+        flex: 1;
+    }
+
+    >button {
+        background-color: #267A97;
+        border: 1px solid white;
+        color: white;
+        font-weight: 800;
+        border-radius: 32px;
+        padding: 4px 16px;
+    }
+}

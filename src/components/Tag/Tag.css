@@ -1,0 +1,12 @@
+.tag-btn {
+    color: white;
+    background-color: black;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.tag-btn.special {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: #199735
+}

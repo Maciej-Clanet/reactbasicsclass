@@ -1,7 +1,6 @@
 .search {
     display: flex;
     gap: 8px;
-
     >input {
         border: 1px solid white;
         color: white;
@@ -10,7 +9,6 @@
         background: none;
         flex: 1;
     }
-
     >button {
         background-color: #267A97;
         border: 1px solid white;

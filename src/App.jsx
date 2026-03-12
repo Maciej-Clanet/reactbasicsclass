@@ -3,6 +3,7 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Tag from './components/Tag/Tag'
 import ProductCard from './components/ProductCard/ProductCard'
+import OfferCard from './components/OfferCard/OfferCard'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <div className="main-content">
         <section className="product-group">
           <ProductCard
+
             title="Some product"
             description="some description"
             link="/"
@@ -43,6 +45,18 @@ function App() {
           >
           </ProductCard>
         </section>
+
+        <section className="offers">
+          <OfferCard title="test card" link="/">
+              <p> Some random card content</p>
+          </OfferCard>
+
+          <OfferCard title="test card" link="/">
+              <h3>Super Mega Offer</h3>
+              <p>Its almost freeeee!</p>
+          </OfferCard>
+        </section>
+
       </div>
       <Footer />
 

@@ -5,6 +5,10 @@ import Tag from './components/Tag/Tag'
 import ProductCard from './components/ProductCard/ProductCard'
 import OfferCard from './components/OfferCard/OfferCard'
 import TabCard from './components/TabCard/TabCard'
+import IconButton from './components/IconButton/IconButton'
+
+import menuIcon from "./assets/menuicon.svg"
+
 function App() {
 
   const tabs = [
@@ -82,8 +86,8 @@ function App() {
         </section>
 
         <section className="offers">
-          <OfferCard title="test card" link="/">
-              <p> Some random card content</p>
+          <OfferCard title="Icon Button Component" link="/">
+              <IconButton text="test" icon={menuIcon} action={() => alert("test")}/>
           </OfferCard>
 
           <OfferCard title="test card" link="/">

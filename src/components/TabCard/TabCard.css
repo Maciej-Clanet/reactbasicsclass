@@ -1,0 +1,35 @@
+.tab-card{
+    background-color: white;
+    padding: 16px 32px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tab-labels{
+    display: flex;
+    /* gap: 16px; */
+    position: relative;
+}
+.tab-label{
+    padding: 4px 16px;
+    text-wrap: nowrap;
+    z-index: 1;
+    background: none;
+    border: 1px solid transparent;
+}
+.tab-label.active{
+    font-weight: 600;
+    border: 1px solid black;
+    border-bottom: transparent;
+    background-color: white;
+}
+.tab-line{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom:0;
+
+}

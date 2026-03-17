@@ -4,8 +4,38 @@ import Footer from './components/Footer/Footer'
 import Tag from './components/Tag/Tag'
 import ProductCard from './components/ProductCard/ProductCard'
 import OfferCard from './components/OfferCard/OfferCard'
-
+import TabCard from './components/TabCard/TabCard'
 function App() {
+
+  const tabs = [
+    {
+      "title" : "some tab",
+      "content" : <div>tab 1 content</div>
+    },
+    {
+      "title" : "second tab",
+      "content" : <div>tab 2 content</div>
+    },
+    {
+      "title" : "thrid tab",
+      "content" : <div>tab 3 content</div>
+    }
+  ]
+
+  const differentTabs = [
+    {
+      "title" : "asfasfb",
+      "content" : <div>tab 1 content</div>
+    },
+    {
+      "title" : "sesaffab",
+      "content" : <div>tab 2 content</div>
+    },
+    {
+      "title" : "tsafasfab",
+      "content" : <div>tab 3 content</div>
+    }
+  ]
 
   return (
     <>
@@ -46,6 +76,11 @@ function App() {
           </ProductCard>
         </section>
 
+        <section className="tabs-section">
+          <TabCard tabs={tabs} />
+          <TabCard tabs={differentTabs}/>
+        </section>
+
         <section className="offers">
           <OfferCard title="test card" link="/">
               <p> Some random card content</p>
@@ -58,6 +93,8 @@ function App() {
         </section>
 
       </div>
+
+
       <Footer />
 
     </>

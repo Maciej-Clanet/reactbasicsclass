@@ -12,3 +12,11 @@
   gap: 32px;
   background-color: beige;
 }
+
+.tabs-section{
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+  background-color: #FCDB23;
+  gap: 16px;
+}
